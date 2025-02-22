@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     
     clickHereContainer.addEventListener("click", revealContent);
     document.getElementById('surpriseBtn').addEventListener('click', function() {
-        alert('🎉 Surprise! Wishing you a fantastic year ahead! 🎂🎁❤️');
+        alert('🎉 Parat ekda... Happyy birthday Sayuuu🎂🎁 Enjoy your day! I hope next year ekdm best jaoo.. Tula je je pahije te te bheto..🎂❤️');
     });
 });
