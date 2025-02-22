@@ -1,28 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>🎂 Happy Birthday! 🎉</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: url('background.jpg') no-repeat center center fixed; background-size: cover;">
+<body>
+
     <h1>🎉 Happy Birthday, Bestie! 🎂</h1>
-    <p>Enjoy your special day with these fun memories!</p>
-    <audio controls autoplay>
+    <p>Wishing you an amazing day filled with joy and surprises!</p>
+
+    <audio controls autoplay loop>
         <source src="birthday_song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
     </audio>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Upload Photo</button>
-    </form>
+
     <div class="gallery">
-        {% for photo in photos %}
-            <img src="{{ photo.image.url }}" alt="Birthday Memory" class="photo">
-        {% endfor %}
+        <h2>Memories Together 📸</h2>
+        <div class="photo-grid">
+            <img src="photo1.jpg" alt="Memory 1">
+            <img src="photo2.jpg" alt="Memory 2">
+            <img src="photo3.jpg" alt="Memory 3">
+        </div>
     </div>
+
+    <button id="surpriseBtn">🎁 Click for a Surprise!</button>
+
     <script src="script.js"></script>
+
 </body>
 </html>
