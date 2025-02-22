@@ -1,13 +1,55 @@
 body {
     text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
 }
-.photo {
+
+h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px black;
+}
+
+p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photo-grid img {
     width: 200px;
-    margin: 10px;
-    animation: fadeIn 2s;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+
+@keyframes popUp {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
